@@ -1,0 +1,114 @@
+html{
+    box-sizing:border-box;
+    background: #66A3D2; /* Для старых браузров */
+    background: linear-gradient(to top, #006666, #d4ffff);
+    font-size:small;
+    padding:0px;
+}
+body{
+    box-sizing:inherit;
+    padding:0;
+    width:90%;
+    min-width: 710px;
+    max-width:1200px;
+    background:white;
+    margin: 0px auto 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size:20px;
+    line-height:1.5;
+
+}
+
+/*шапка*/
+#header{
+    color:#003366;
+}
+/*слайдер*/
+#slider {
+    width: 100%;
+    max-width:1200px;
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 3);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+   -webkit-transition: 1s;
+   -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+#slidewrapper .slide {
+    width: calc(100%/3);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+#navBth{
+    position:absolute;
+        bottom:5px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.navigation:hover{
+    cursor: pointer;
+}
+/*меню*/
+.menu{
+    display:table;
+    box-sizing:inherit;
+    height: 3em;
+    background: #33CC99;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left:-2em;
+    width: calc(100% + 3em);
+}
+.menu a{
+    box-sizing:inherit;
+    display:table-cell;
+    text-decoration:none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: calc(100%/4);
+    height: 100%;
+    vertical-align:middle;
+    text-align:center;
+}
+.menu a:hover{
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    ransform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 10px 10px #222;
+    cursor: pointer;
+}
+#conteiner{
+    padding: 0 1em 1em 2em;
+   
+}
+p{
+    text-indent:3em;
+    text-align: justify;
+
+}
+h1{
+
+    color:#003366;
+}
