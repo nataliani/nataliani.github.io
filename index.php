@@ -8,8 +8,9 @@
     <a > <div class='advantagesImg'><img src="image/advantages/activity.png" alt="Поиск"> </div>       <div class="advantagesText">Активность</div></a>
 </div>
 <div id="boxAdvantages">
-    <a href="#" id="interested" class="lightBox">
+    <div  id="interested" class="lightBox">
         <div class="box"> 
+            <a href="#" class="close"><img  src="/image/close.png" alt="Закрыть"></a>
             <h1> Заинтересованность в работе!</h1>
             <hr>
             <p>На мой взгляд моим большим преимуществом является заинтересованность в деле. Моя молодость позволяет 
@@ -20,9 +21,10 @@
                 вместе с моим личным развитием будет и развиваться компания. Да не спорю до определённого уровня необходимо дорасти, 
                 чтобы развивать компанию. Но я уверенна что с моей заинтересованность это произойдёт достаточно быстро!</p>
         </div>
-    </a>
-    <a href="#" id="perfectionism" class="lightBox">
+    </div>
+    <div href="#" id="perfectionism" class="lightBox">
         <div class="box"> 
+            <a href="#" class="close"><img src="/image/close.png" alt="Закрыть"></a>
             <h1>Перфекционизм!</h1>
             <hr>
             <p>Обладаю неутолимым желанием сделать всё хорошо, и даже идеально. Очень коробят недочёты в работе обстановке и удобству. 
@@ -30,7 +32,7 @@
             И с кодом также хочетсяреализовывать правильные и красивы решения, и если эти решения и не настолько красивы, то только по причине того что я только
             начинающий волшебник. И я знаю наверняка это временно!</p>
         </div>
-    </a>
+    </div>
 </div>
 <div id="latter" class="home">
     <h1> Здравствуйте! </h1>

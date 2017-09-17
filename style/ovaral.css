@@ -16,7 +16,6 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     font-size:20px;
     line-height:1.5;
-
 }
 
 /*шапка*/
@@ -66,9 +65,6 @@ body{
     margin: 0;
     text-align: center;
 }
-.navigation:hover{
-    cursor: pointer;
-}
 /*меню*/
 .menu{
     display:table;
@@ -101,7 +97,19 @@ body{
 }
 #conteiner{
     padding: 0 1em 1em 2em;
-   
+}
+.close{
+    display:block;
+    text-decoration:none;
+    color:black;
+    padding:0;
+    margin:0;
+        width:2%;
+    min-width:20px;
+    max-width:50px;
+}
+.close img{
+    width:100%;
 }
 p{
     text-indent:3em;
