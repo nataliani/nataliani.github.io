@@ -6,8 +6,7 @@ var slideInterval = 4000;
 function nextSlide() {
     if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
         $('#slidewrapper').css({
-        'transform': 'translate(0, 0)', 
-        'transition':'0s'});     
+        'transform': 'translate(0, 0)'});     
         slideNow = 1;
     } else {
         translateWidth = -$('.slide').width() * (slideNow);
@@ -15,8 +14,7 @@ function nextSlide() {
          $('#slidewrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
-            '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
-            'transition':'1s'
+            '-ms-transform': 'translate(' + translateWidth + 'px, 0)'
         });
         slideNow++;
     }

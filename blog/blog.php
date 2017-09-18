@@ -1,4 +1,4 @@
-<?php include "/../include/header.php" ?>
+<?php include "/../header.php" ?>
 <div class="personal">
 <h1>Немного о себе</h1>
    <p>  А сейчас с вошего позволения я бы хотела немного поделится своими мыслями связанными с моей жизнью. 
@@ -22,4 +22,4 @@
     </p>
    
 </div>
-<?php include "/../include/footer.php"?>
+<?php include "/../footer.php"?>

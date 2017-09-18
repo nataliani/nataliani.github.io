@@ -1,5 +1,7 @@
 html{
-    box-sizing:border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
     background: #66A3D2; /* ƒл€ старых браузров */
     background: linear-gradient(to top, #006666, #d4ffff);
     font-size:small;
@@ -16,10 +18,19 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     font-size:20px;
     line-height:1.5;
+  
 }
-
 /*шапка*/
 #header{
+    color:#003366;
+}
+#menuTop{
+    padding: 0 5px;
+    font-weight: bold;
+    text-align:right;
+}
+#menuTop a{
+    padding:5px;
     color:#003366;
 }
 /*слайдер*/
@@ -56,7 +67,6 @@ body{
     display: inline;
     float: left;
 }
-
 #navBth{
     position:absolute;
         bottom:5px;
@@ -64,6 +74,9 @@ body{
     padding: 0;
     margin: 0;
     text-align: center;
+}
+.navigation:hover{
+    cursor:pointer;
 }
 /*меню*/
 .menu{
@@ -78,16 +91,15 @@ body{
 .menu a{
     box-sizing:inherit;
     display:table-cell;
-    text-decoration:none;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
-    width: calc(100%/4);
+    width: calc(100%/5);
     height: 100%;
     vertical-align:middle;
     text-align:center;
 }
-.menu a:hover{
+a:hover{
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     ransform: translateY(-3px);
@@ -98,25 +110,111 @@ body{
 #conteiner{
     padding: 0 1em 1em 2em;
 }
+/*Позиционирование лайтбоксов на весь ресурс*/
+.lightBox
+{
+    display:none;
+    box-sizing:inherit;
+    position: fixed;
+        top: 0;
+        left:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(196, 196, 196, 0.54);
+    z-index:200;
+    text-decoration:none;
+    color:black;
+    font-size: 1em;
+    
+}
+.lightBox:target{
+   display:block;
+}
+.lightBox .box
+{   
+   
+    position: fixed;
+       top:50%;
+       left:50%;
+    width: 50%;
+    min-width:400px;
+    max-width:1000px;
+    max-height:700px;
+    transform: translate(-50%, -50%);
+    background:#fff;
+    padding:40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+    overflow:auto;
+}
+.center,
+.lightBox .box h1{
+    text-align: center;
+}
+
 .close{
+    position:absolute;
+        top:15px;
+        right:15px;
     display:block;
     text-decoration:none;
     color:black;
     padding:0;
     margin:0;
-        width:2%;
-    min-width:20px;
-    max-width:50px;
+    width:1em;
+    height:1em;
+    background-image:url('/image/close.png');
+    background-size: cover;
+    -moz-background-size: cover;  /* Firefox 3.6 */
+    background-position: center;
 }
-.close img{
-    width:100%;
+.button{
+    display:none;
+    height:2em;
+    background:linear-gradient(to right, #33CC99, #d4ffff);
+    padding:5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+    font-size:1.2em;
+    font-weight: bold;
+    margin:1em;
+    margin-left:75%;
+    color:black;
 }
+.anchor {
+	padding-top:3em;
+    margin-top:-3em;
+}
+
 p{
     text-indent:3em;
     text-align: justify;
-
+}
+a{
+    text-decoration:none;
 }
 h1{
-
     color:#003366;
+}
+.imgBox{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    margin:10px 0 20px -1em;
+    width: calc(100% + 1em);
+    height:200px;
+    overflow-y: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+}
+.imgBox img{
+    height:190px;
+    margin:5px;
+}
+.lightBoxForImgBox .box{
+    width:95%;
+}
+.lightBoxForImgBox img{
+    width:99%;
 }
