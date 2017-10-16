@@ -1,3 +1,6 @@
+#conteiner{
+    padding: 0 1em 1em 2em;
+}
 #advantages .advantagesText{
     height: 2em;
 }
@@ -7,12 +10,17 @@
     height:100%);
     margin:0;
     padding:0;
-    
-}
+ }
 #advantages .advantagesImg img{
     width:80px;
     margin: 5px auto;
 }
+/*Основная фотография в абзаце о себе*/
+#face{
+    width: 15%;
+    max-width:700px;
+}
+
 
 
 

@@ -1,6 +1,9 @@
-<?php include "/header.php" ?>
-<script src="/js/addSummary.js"></script>
-<link rel="stylesheet" type="text/css" href="/style/index.css">
+<?php include './header.php' ?>
+<script src='./js/addSummary.js'></script>
+<link rel="stylesheet" type="text/css" href='./style/index.css'>
+
+<div id="conteiner">
+
 
 <div id="advantages" class="menu" >
     <a href="#interested"> <div class='advantagesImg'><img src="image/advantages/interest.png" alt="Интерес"></div>      <div class="advantagesText">Заинтересованность</div></a>
@@ -56,7 +59,10 @@
 </div>
 <div id="latter">
     <h1> Здравствуйте! </h1>
+    
+   
     <p>
+        <a href="#imgFace"><img src="/image/face.jpg" alt="Личная фотография"  id="face" align="right" vspac="20" hspace="20"></a>
        Возможно, вас заинтересует моя кандидатура в качестве сотрудника вашей компании. Во время обучения в университете я принимала участие в разработке 
        программного обеспечения, занимаясь написанием технической документации и общению с конечным пользователем продукта по вопросам улучшения интерфейса 
        рограммного обеспечения. Успешно провела переговоры во время утверждения документации и сдачи в эксплуатацию разработанного программного продукта.
@@ -69,6 +75,7 @@
     <p>
         Предлагаю вам ознакомится с моим подробным резюме. Строго прошу не судить, я еще не волшебник, а только учусь. Но с уверенностью заявляю волшебником обязательно стану.
     </p>
+    
 </div>
 <div class="menu" id="mainMenu">
 	<a href="#info" title="Сокращенная автобиография">Личные данные</a>
@@ -101,17 +108,19 @@
             <h3>2001 – 2012г.</h3> МОУ СОШ №37.
         </li>
     </ul>
-    <div class="imgBox" id="imgBoxForEducation">
+    <div class="imgBox anchor" id="imgBoxForEducation" >
         <a href="#magistracy"><img src="/image/education/magistracy.jpg" alt="Зачётная книжка магистратура"></a>
         <a href="#bachelorPage1"><img src="/image/education/bachelorPage1.jpg" alt="Диплом бакалавра лист 1"></a>
         <a href="#bachelorPage2"><img src="/image/education/bachelorPage2.jpg" alt="Диплом бакалавра лист 2"></a>
         <a href="#bachelorPage3"><img src="/image/education/bachelorPage3.jpg" alt="Диплом бакалавра лист 3"></a>
         <a href="#bachelorPage4"><img src="/image/education/bachelorPage4.jpg" alt="Диплом бакалавра лист 4"></a>
     </div>
-    <div class="lightBoxForImgBox">
+    <div class="lightBoxForImgBox" >
         <div class="lightBox" id="magistracy"> 
             <div class="box"> 
                 <a href="#imgBoxForEducation" class="close"></a>
+                <h1>Зачётная книжка</h1>
+                <hr>
                 <img src="/image/education/magistracy.jpg" alt="Зачётная книжка магистратура">
             </div>
         </div>
@@ -140,7 +149,7 @@
             </div>
         </div>
     </div>
-    <a href="#addEducation" class="button">Добавить образование</a>
+   <!-- <a href="#addEducation" class="button">Добавить образование</a>-->
     <div class="lightBox" id="addEducation">
         <form class="box">
             <a href="#listEducation" class="close"></a>
@@ -224,7 +233,7 @@
 <div id="communication" class="anchor" >
     <h1>Обратная связь</h1>
     <p> Если вас заинтереовало моё предложение со мной можно связаться по телефону: <em>+79144064313</em>,
-    <br>или оставить для меня сообщение natka.markova.1995@mail.ru.</p>
+    <br>или оставить для меня сообщение <em>natka.markova.1995@mail.ru</em>.</p>
     <!--
         <form  action="" method="post">
             <input type="text" name="name" placeholder="Наименование организации"/>
@@ -237,4 +246,4 @@
 
 </div>
  <h2>С уважением, Наталья Ивановна! </h2>
-<?php include "/footer.php"?>
+<?php include './footer.php'?>

@@ -20,19 +20,75 @@ body{
     line-height:1.5;
   
 }
+p{
+    text-indent:3em;
+    text-align: justify;
+}
+a{
+    text-decoration:none;
+}
+h1{
+    color:#003366;
+}
+hr{
+    background:#1abc9c;
+}
 /*шапка*/
 #header{
     color:#003366;
 }
-#menuTop{
-    padding: 0 5px;
-    font-weight: bold;
-    text-align:right;
+/* Вход в систему*/
+#enter {
+  box-sizing: border-box;
+  width: 260px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 1.5em;
+  border-radius: 3px;
 }
-#menuTop a{
-    padding:5px;
-    color:#003366;
+input {
+  margin: 1em 0px;
+  width: 99%;
+  display: block;
+  border: none;
+  padding: 2em 0;
+  border-bottom: solid 1px #1abc9c;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+          transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+  background-position: -1000px 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #0e6252;
 }
+input:focus, input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+  color: #1abc9c;
+  font-size: 1em;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
+button,
+.button{
+  display:inline-block;
+  border: none;
+  background: #1abc9c;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0.7em;
+  width: 200px;
+  color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  font-size:1em;
+  margin-left:calc(100% - 200px);
+  margin-top:0.5em;
+}
+
 /*слайдер*/
 #slider {
     width: 100%;
@@ -75,10 +131,39 @@ body{
     margin: 0;
     text-align: center;
 }
+input[type="radio"]{
+    display:inline;
+    width:2em;
+}
 .navigation:hover{
     cursor:pointer;
 }
-/*меню*/
+/*верхнее меню*/
+#menuTop{
+    padding: 0 5px;
+    font-weight: bold;
+    text-align:right;
+    line-height:2;
+}
+#menuTop a{
+    display:inline-block;
+    padding:5px;
+    color:#003366;
+}
+#menuTop #vk,
+#menuTop #contacts{
+    padding:0 0 0 0.2em;
+    margin:0;
+    width:2.5em;
+    height:100%;
+    background: url(/image/vk.svg) 50% 50% no-repeat;
+    color:white;
+    
+}
+#menuTop #contacts{
+    background: url(/image/contacts.svg) 50% 50%  no-repeat;
+}
+/*навигация*/
 .menu{
     display:table;
     box-sizing:inherit;
@@ -99,6 +184,7 @@ body{
     vertical-align:middle;
     text-align:center;
 }
+button:hover,
 a:hover{
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
@@ -106,9 +192,6 @@ a:hover{
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
     text-shadow: 0 10px 10px #222;
     cursor: pointer;
-}
-#conteiner{
-    padding: 0 1em 1em 2em;
 }
 /*Позиционирование лайтбоксов на весь ресурс*/
 .lightBox
@@ -126,14 +209,12 @@ a:hover{
     text-decoration:none;
     color:black;
     font-size: 1em;
-    
 }
 .lightBox:target{
    display:block;
 }
 .lightBox .box
 {   
-   
     position: fixed;
        top:50%;
        left:50%;
@@ -143,7 +224,7 @@ a:hover{
     max-height:700px;
     transform: translate(-50%, -50%);
     background:#fff;
-    padding:40px;
+    padding:0.5em 2em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius:5px;
     overflow:auto;
@@ -152,7 +233,6 @@ a:hover{
 .lightBox .box h1{
     text-align: center;
 }
-
 .close{
     position:absolute;
         top:15px;
@@ -164,38 +244,10 @@ a:hover{
     margin:0;
     width:1em;
     height:1em;
-    background-image:url('/image/close.png');
+    background-image:url(/image/close.png);
     background-size: cover;
     -moz-background-size: cover;  /* Firefox 3.6 */
     background-position: center;
-}
-.button{
-    display:none;
-    height:2em;
-    background:linear-gradient(to right, #33CC99, #d4ffff);
-    padding:5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius:5px;
-    font-size:1.2em;
-    font-weight: bold;
-    margin:1em;
-    margin-left:75%;
-    color:black;
-}
-.anchor {
-	padding-top:3em;
-    margin-top:-3em;
-}
-
-p{
-    text-indent:3em;
-    text-align: justify;
-}
-a{
-    text-decoration:none;
-}
-h1{
-    color:#003366;
 }
 .imgBox{
     display:flex;
@@ -218,3 +270,7 @@ h1{
 .lightBoxForImgBox img{
     width:99%;
 }
+.left{
+    float:left;
+}
+

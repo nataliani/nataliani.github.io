@@ -4,7 +4,7 @@
   	<meta charset="UTF-8">
   	<title>Резюме</title>
 	<link rel="stylesheet" type="text/css" href="/style/ovaral.css">
-    <link rel="icon" type="image/x-icon" href="image/icon.ico" />
+    <link rel="icon" type="image/x-icon" href="/image/icon.ico" />
     <script src="/js/jquery-3.2.1.min.js"></script>
    <script src="/js/slider.js"></script>
     <script src="/js/menu.js"></script>
@@ -12,17 +12,34 @@
   <body>
   	<div id="header">
         <div id="menuTop">
+            <a href="https://vk.com/id84725210" target="_blank" title="VK" id="vk" class="left">.</a>
+            <a href="#phone"title="Контакты" class="left"  title="Контакты для связи" id="contacts">.</a>
             <a href="/../index.php" title="Резюме">Резюме</a>
             <a href="/blog/blog.php" title="Мои мысли, идеи, познания">Блог</a>
-           <!-- <a href="#autentification" title="Вход с правами администратора">Войти</a>-->
+            <a href="#autentification" title="Вход с правами администратора">Войти</a>
         </div>
-        <div class="lightBox" id="autentification">
+        <div class="lightBox" id="phone">
             <div class="box">
                 <a href="#" class="close"></a>
-                <input type="">
-                <input type="password">
-                <a href="#" id="enter" class="button">Войти</a>
+                <h1>Контакты</h1>
+                <hr>
+                <p> 
+                    <br> 89144064313; 
+                    <br> 89244011379;
+                    <br> natka.markova.1995@mail.ru;
+                    <br> <a href="https://github.com/nataliani/summary.git" target="_blank" title="gitHub" id="gitHub">aккаунт на gitHub. </a>
+                </p>
             </div>
+        </div>
+        <div class="lightBox" id="autentification">
+            <form  id="enter" class="box">
+                <a href="#" class="close"></a>
+                <h1>Вход в систему</h1>
+                <hr>
+                <input placeholder="Логин" type="text" required="">
+                <input placeholder="Пароль" type="password" required="">
+                <button>Войти</button>
+            </form>
         </div>
 		<div id="slider">
                 <div id="slidewrapper">
@@ -37,4 +54,3 @@
                 </div>
         </div>
 	</div>
-<div id="conteiner">
