@@ -38,7 +38,7 @@
                 <hr>
                 <input placeholder="Логин" type="text" required="">
                 <input placeholder="Пароль" type="password" required="">
-                <button>Войти</button>
+                <a href="/admin/seestat.php" class="button">Войти</a>
             </form>
         </div>
 		<div id="slider">
@@ -54,3 +54,4 @@
                 </div>
         </div>
 	</div>
+    <div id="conteiner">
