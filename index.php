@@ -1,4 +1,5 @@
 <?php include './header.php' ?>
+<?php include './admin/stat.php' ?>
 <script src='./js/addSummary.js'></script>
 <link rel="stylesheet" type="text/css" href='./style/index.css'>
 
@@ -208,10 +209,11 @@
             <li>активно занимаюсь изучением web-праграммирования и английского языка;</li>
             <li>ответственная, легко обучаемая, коммуникабельная, обладаю организаторскими способностями. Без вредных привычек.</li>
         </ul>
-       <em> На этом моё повествование о профессиональной деятельности окончено.</em>
-        <div class="imgBox" id="imgBoxForAchievements">
+        <!--  <div class="imgBox" id="imgBoxForAchievements">
             <a href="#magistracy"><img src="/image/education/magistracy.jpg" alt="Зачётная книжка магистратура"></a>
-        </div>
+        </div> -->
+       <em> На этом моё повествование о профессиональной деятельности окончено.</em>
+       
     </div>
     <div id="communication" class="anchor" >
         <h1>Обратная связь</h1>

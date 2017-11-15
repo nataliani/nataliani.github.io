@@ -1,4 +1,5 @@
 <?php include './../header.php' ?>
+<?php include './../admin/stat.php' ?>
 <div id="personal">
     <h1>Немного о себе</h1>
     <hr>
