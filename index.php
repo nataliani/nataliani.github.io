@@ -1,7 +1,7 @@
 <?php include './header.php' ?>
 <?php include './admin/stat.php' ?>
 <script src='./js/addSummary.js'></script>
-<link rel="stylesheet" type="text/css" href='./style/index.css'>
+<link rel="stylesheet" type="text/css" href='/index.css'>
 
     <div id="advantages" class="menu" >
         <a href="#interested"> <div class='advantagesImg'><img src="image/advantages/interest.png" alt="Интерес"></div>      <div class="advantagesText">Заинтересованность</div></a>
@@ -218,17 +218,16 @@
     <div id="communication" class="anchor" >
         <h1>Обратная связь</h1>
         <p> Если вас заинтереовало моё предложение со мной можно связаться по телефону: <em>+79144064313</em>,
-        <br>или оставить для меня сообщение <em>natka.markova.1995@mail.ru</em>.</p>
-        <!--
-            <form  action="" method="post">
-                <input type="text" name="name" placeholder="Наименование организации"/>
-                <input type="text" name="description" id="description" placeholder="Ожидаю ваши предложения и вопросы" required maxlength="1000"/>
-                <input type="tel" name="phone" id="phone" placeholder="Контактный номер" required/>
-                <input type="email" name="mail" id="mail" placeholder="Контактный e-mail"/>
-                <input type="submit" name="send" value="Отправить" id="in"/>
-            </form>
-    -->
-    </div>
+        <br>или оставить для меня сообщение.</p>
+        <form  action="./handler/mail.php" method="POST" id="feedback">
+            <input type="text" name="nameUser" placeholder="Имя" required/>
+            <input type="text" name="nameCompany" placeholder="Наименование организации"/>
+            <textarea name="description" id="description" rows="7" placeholder="Ожидаю ваши предложения и вопросы" required maxlength="1000"></textarea>
+            <input type="tel" name="phone" id="phone" placeholder="Контактный номер" required/>
+            <input type="email" name="email" id="email" placeholder="Контактный e-mail" required/>
+            <input type="submit" name="send" value="Отправить" id="in"/>
+        </form>
+     </div>
  <h2>С уважением, Наталья Ивановна! </h2>
 
 <?php include './footer.php'?>
