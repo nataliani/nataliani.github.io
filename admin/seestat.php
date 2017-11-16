@@ -2,7 +2,7 @@
 include './../header.php';?>
 <?php
 if (isset($_GET[col])) { $col=$_GET[col]; } else { $col=50; }
-$file=file("/stat.log"); ?>
+$file=file("./stat.log"); ?>
 
 <center>
 <?php
@@ -32,6 +32,6 @@ echo '<tr>
 	  </tr>';
 }
 echo '</table>';
-echo '<br>Просмотреть последние <a href=?col=100>100</a> <a href=?col=500>500</a> <a href=?col=1000>1000</a> посещений.';
+echo '<br>Просмотреть последние <a href=?col=100>100</a><a href=?col=500>500</a> <a href=?col=1000>1000</a> посещений.';
 echo '<br>Просмотреть <a href=?col='.sizeof($file).'>все посещения</a>.</center>';
 ?>

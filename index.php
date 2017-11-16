@@ -220,8 +220,7 @@
         <p> Если вас заинтереовало моё предложение со мной можно связаться по телефону: <em>+79144064313</em>,
         <br>или оставить для меня сообщение.</p>
         <form  action="./handler/mail.php" method="POST" id="feedback">
-            <input type="text" name="nameUser" placeholder="Имя" required/>
-            <input type="text" name="nameCompany" placeholder="Наименование организации"/>
+            <input type="text" name="nameUser" placeholder="Имя и наименование организации" required/>
             <textarea name="description" id="description" rows="7" placeholder="Ожидаю ваши предложения и вопросы" required maxlength="1000"></textarea>
             <input type="tel" name="phone" id="phone" placeholder="Контактный номер" required/>
             <input type="email" name="email" id="email" placeholder="Контактный e-mail" required/>
