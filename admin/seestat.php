@@ -2,7 +2,7 @@
 include './../header.php';?>
 <?php
 if (isset($_GET[col])) { $col=$_GET[col]; } else { $col=50; }
-$file=file("./stat.log"); ?>
+$file=file("../stat.log"); ?>
 
 <center>
 <?php
