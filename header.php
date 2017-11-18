@@ -3,7 +3,7 @@
   <head>
   	<meta charset="UTF-8">
   	<title>Резюме</title>
-	<link rel="stylesheet" type="text/css" href="/style/ovaral.css">
+	<link rel="stylesheet" type="text/css" href="/ovaral.css">
     <link rel="icon" type="image/x-icon" href="/image/icon.ico" />
     <script src="/js/jquery-3.2.1.min.js"></script>
    <script src="/js/slider.js"></script>

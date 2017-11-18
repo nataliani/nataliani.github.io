@@ -35,6 +35,16 @@ h1{
 hr{
     background:#1abc9c;
 }
+table{
+  width: 100%;
+  border: 2px solid #1abc9c;
+}
+th{
+  background: rgba(109, 114, 115, 0.4);
+}
+tr:nth-child(2n-1){
+  background: rgba(109, 114, 115, 0.1);
+}
 /*шапка*/
 #header{
     color:#003366;
@@ -47,7 +57,8 @@ hr{
   padding-bottom: 1.5em;
   border-radius: 3px;
 }
-input {
+input,
+textarea {
   margin: 1em 0px;
   width: 99%;
   display: block;
@@ -63,12 +74,16 @@ input {
   background-repeat: no-repeat;
   color: #0e6252;
 }
-input:focus, input:valid {
+input:focus, input:valid,
+textarea:focus, textarea:valid {
   box-shadow: none;
   outline: none;
   background-position: 0 0;
 }
-input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder, 
+input:valid::-webkit-input-placeholder,
+textarea:focus::-webkit-textarea-placeholder, 
+textarea:valid::-webkit-textarea-placeholder {
   color: #1abc9c;
   font-size: 1em;
   -webkit-transform: translateY(-20px);
@@ -76,7 +91,8 @@ input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
   visibility: visible !important;
 }
 button,
-.button{
+.button,
+input[type="submit"]{
   display:inline-block;
   border: none;
   background: #1abc9c;
@@ -187,7 +203,8 @@ input[type="radio"]{
     text-align:center;
 }
 button:hover,
-a:hover{
+a:hover
+{
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     ransform: translateY(-3px);

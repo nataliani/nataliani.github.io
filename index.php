@@ -1,7 +1,11 @@
 <?php include './header.php' ?>
+<<<<<<< HEAD
 <?php //include './admin/stat.php' ?>
+=======
+<?php include './admin/stat.php' ?>
+>>>>>>> 86a57143028663a312a215cf9ec78d9b10218613
 <script src='./js/addSummary.js'></script>
-<link rel="stylesheet" type="text/css" href='./style/index.css'>
+<link rel="stylesheet" type="text/css" href='/index.css'>
 
     <div id="advantages" class="menu" >
         <a href="#interested"> <div class='advantagesImg'><img src="image/advantages/interest.png" alt="Интерес"></div>      <div class="advantagesText">Заинтересованность</div></a>
@@ -209,14 +213,16 @@
             <li>активно занимаюсь изучением web-праграммирования и английского языка;</li>
             <li>ответственная, легко обучаемая, коммуникабельная, обладаю организаторскими способностями. Без вредных привычек.</li>
         </ul>
-       <em> На этом моё повествование о профессиональной деятельности окончено.</em>
-        <div class="imgBox" id="imgBoxForAchievements">
+        <!--  <div class="imgBox" id="imgBoxForAchievements">
             <a href="#magistracy"><img src="/image/education/magistracy.jpg" alt="Зачётная книжка магистратура"></a>
-        </div>
+        </div> -->
+       <em> На этом моё повествование о профессиональной деятельности окончено.</em>
+       
     </div>
     <div id="communication" class="anchor" >
         <h1>Обратная связь</h1>
         <p> Если вас заинтереовало моё предложение со мной можно связаться по телефону: <em>+79144064313</em>,
+<<<<<<< HEAD
         <br>или оставить для меня сообщение <em>natka.markova.1995@mail.ru</em>.</p>
         
         <!--    <form  action="" method="post">
@@ -228,6 +234,17 @@
             </form>-->
     
     </div>
+=======
+        <br>или оставить для меня сообщение.</p>
+        <form  action="./handler/mail.php" method="POST" id="feedback">
+            <input type="text" name="nameUser" placeholder="Имя и наименование организации" required/>
+            <textarea name="description" id="description" rows="7" placeholder="Ожидаю ваши предложения и вопросы" required maxlength="1000"></textarea>
+            <input type="tel" name="phone" id="phone" placeholder="Контактный номер" required/>
+            <input type="email" name="email" id="email" placeholder="Контактный e-mail" required/>
+            <input type="submit" name="send" value="Отправить" id="in"/>
+        </form>
+     </div>
+>>>>>>> 86a57143028663a312a215cf9ec78d9b10218613
  <h2>С уважением, Наталья Ивановна! </h2>
 
 <?php include './footer.php'?>
