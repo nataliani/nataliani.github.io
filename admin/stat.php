@@ -1,19 +1,20 @@
 <?php 
-    $file="stat.log";
+    $file="stat.log"; 
     $col_zap=4999;
     
     function getRaelIpAddr(){
         if(!empty($_SERVER['HTTP_CLIENT_IP']))
         {
             $ip=$_SERVER['HTTP_CLIENT_IP'];
+        } 
+        elseif (!empty($_SERVER['HTTP_X_FORWAR'])) 
+        { 
+            $ip=$_SERVER['HTTP_X_FORWARDED_FOR']; 
         }
-    } elseif (!empty($_SERVER['HTTP_X_FORWAR']))
-
- 
-        
-        
- { $ip=$_SERVER['HTTP_X_FORWARDED_FOR']; }
- else { $ip=$_SERVER['REMOTE_ADDR']; }
+    else 
+    {
+    $ip=$_SERVER['REMOTE_ADDR']; 
+    }
  return $ip;
 }    
 
