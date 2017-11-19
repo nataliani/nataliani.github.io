@@ -9,6 +9,8 @@ $description = $_POST['description'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 
+
+
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP

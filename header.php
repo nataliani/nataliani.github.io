@@ -6,8 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="/ovaral.css">
     <link rel="icon" type="image/x-icon" href="/image/icon.ico" />
     <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery.maskedinput.min.js"></script>
+
    <script src="/js/slider.js"></script>
     <script src="/js/menu.js"></script>
+    <script src="/js/overal.js"></script>
   </head>
   <body>
   	<div id="header">
@@ -24,8 +27,8 @@
                 <h1>Контакты</h1>
                 <hr>
                 <p> 
-                    <br> 89144064313; 
-                    <br> 89244011379;
+                    <br> <a href="tel:+79144064313">+79144064313</a>; 
+                    <br> <a href="tel:+79244011379">+79244011379</a>;
                     <br> natka.markova.1995@mail.ru;
                     <br> <a href="https://github.com/nataliani/summary.git" target="_blank" title="gitHub" id="gitHub">aккаунт на gitHub. </a>
                 </p>
@@ -36,9 +39,9 @@
                 <a href="#" class="close"></a>
                 <h1>Вход в систему</h1>
                 <hr>
-                <input placeholder="Логин" type="text" required="">
-                <input placeholder="Пароль" type="password" required="">
-                <a href="/admin/seestat.php" class="button">Войти</a>
+                <input placeholder="Логин" id="login" type="text" required="">
+                <input placeholder="Пароль" id="password" type="password" required="">
+                <a id="out" class="button">Войти</a>
             </form>
         </div>
 		<div id="slider">
