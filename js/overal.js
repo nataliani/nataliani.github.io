@@ -6,10 +6,10 @@ jQuery("document").ready(function($){
 
 			location.href = "../admin/seestat.php";
 		}else{
-			$("h2").hide("slow");
+			$("h2").hide();
 			$("#enter").prepend("<h2>Неверно введены логин и пароль.</h2>");
-			alert($("#login").val());
 		}
+		
 	});
 	
 });
