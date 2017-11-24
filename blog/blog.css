@@ -1,11 +1,23 @@
-#blog{
+.flex{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	margin: 2em 0em;
 	flex-wrap: wrap;
 }
-.blog{
-
-
+#loader {
+	background: url(../image/blog/ajax-loader.gif) no-repeat;
+	background-size: cover;
+	height:4rem;
+	width:4rem;
+	z-index: 5;
+	display:none;
+}
+.backBottom {
+	background: url(../image/blog/backbutton.svg) no-repeat;
+	background-size: cover;
+	height:4rem;
+	width:4rem;
+	z-index: 5;
+	display:none;
 }

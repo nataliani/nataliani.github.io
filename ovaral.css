@@ -28,6 +28,7 @@ p{
 }
 a{
     text-decoration:none;
+    color: black;
 }
 h1{
     color:#003366;
@@ -291,5 +292,9 @@ a:hover
 }
 .left{
     float:left;
+}
+.code{
+  background: rgba(217, 252, 242, 0.84);
+  border: 1px solid #92d4c1;
 }
 
