@@ -34,7 +34,8 @@ h1{
     color:#003366;
 }
 hr{
-    background:#1abc9c;
+    background:#1abc9c !important;
+
 }
 table{
   width: 100%;
@@ -50,7 +51,7 @@ tr:nth-child(2n-1){
 #header{
     color:#003366;
 }
-/* ‚ход в систему*/
+/* вход в систему*/
 #enter {
   box-sizing: border-box;
   width: 260px;
@@ -213,7 +214,7 @@ a:hover
     text-shadow: 0 10px 10px #222;
     cursor: pointer;
 }
-/*Џозиционирование лайтбоксов на весь ресурс*/
+/*Позиционирование лайтбоксов на весь ресурс*/
 .lightBox
 {
     display:none;
@@ -278,23 +279,27 @@ a:hover
     height:200px;
     overflow-y: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius:5px;
+  border-radius:5px;
 }
 .imgBox img{
-    height:190px;
-    margin:5px;
+  height:190px;
+   margin:5px;
 }
 .lightBoxForImgBox .box{
-    width:95%;
+  width:95%;
 }
 .lightBoxForImgBox img{
-    width:99%;
+  width:99%;
 }
 .left{
-    float:left;
+  float:left;
 }
 .code{
   background: rgba(217, 252, 242, 0.84);
   border: 1px solid #92d4c1;
+  display: block;
+  margin: 0.3em;
+  padding: 0;
+
 }
 

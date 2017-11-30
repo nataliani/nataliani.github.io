@@ -8,10 +8,13 @@
 #loader {
 	background: url(../image/blog/ajax-loader.gif) no-repeat;
 	background-size: cover;
-	height:4rem;
-	width:4rem;
+	height:3rem;
+	width:3rem;
 	z-index: 5;
-	display:none;
+	position: fixed;
+       top:50%;
+       left:50%;
+    display:none;
 }
 .backBottom {
 	background: url(../image/blog/backbutton.svg) no-repeat;
@@ -20,4 +23,8 @@
 	width:4rem;
 	z-index: 5;
 	display:none;
+	
+}
+div#blog > div{
+	margin-top: -50px;
 }

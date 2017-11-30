@@ -1,19 +1,24 @@
 <?php include './../header.php' ?>
 <?php include './../admin/stat.php' ?>
 
-
 <div id="loader"></div>
-<a href="./blog.php" class="backBottom blog"></a>
+<a href="./blog.php" class="backBottom" ></a>
 <div class="flex" id="blog">
 
-    <a href="./articles/myself.php" class="blog">
-        <img src="/image/blog/personal.jpg">
+    <a href="./articles.php" class="blog" id="myself" title="О себе">
+        <img src="/image/blog/personal.jpg" alt="О себе">
     </a>
-    <a href="./articles/git.php" class="blog">
-        <img src="/image/blog/git.jpg">
+    <a href="./articles.php" class="blog" id="bash" title="Комманды bash" >
+        <img src="/image/blog/bash.png" alt="bash">
     </a>
-    <a href="./articles/english.php" class="blog">
-        <img src="/image/blog/english.jpg">
+    <a href="./articles.php" class="blog" id="jQuary" title="Функции библиотеки jQuary">
+        <img src="/image/blog/jQuary.png" alt="jQuary">
+    </a>
+    <a href="./articles.php" class="blog" id="git" title="Комманды git">
+        <img src="/image/blog/git.jpg" alt="git">
+    </a>
+    <a href="./articles.php" class="blog" id="english" title="Грамматика английского ">
+        <img src="/image/blog/english.jpg" alt="Английский">
     </a>
 </div>
 

@@ -7,8 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/image/icon.ico" />
     <script src="/js/jquery-3.2.1.min.js"></script>
     <script src="/js/jquery.maskedinput.min.js"></script>
-
-   <script src="/js/slider.js"></script>
+    <script src="/js/slider.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/overal.js"></script>
   </head>
@@ -38,7 +37,6 @@
             <form  id="enter" class="box">
                 <a href="#" class="close"></a>
                 <h1>Вход в систему</h1>
-                <hr>
                 <input placeholder="Логин" id="login" type="text" required="">
                 <input placeholder="Пароль" id="password" type="password" required="">
                 <a id="out" class="button">Войти</a>
