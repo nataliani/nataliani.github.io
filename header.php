@@ -21,20 +21,16 @@
             <a href="#autentification" title="Вход с правами администратора">Войти</a>
         </div>
         <div class="lightBox" id="phone">
-            <div class="box">
-                <a href="#" class="close"></a>
                 <h1>Контакты</h1>
-                <hr>
                 <p> 
                     <br> <a href="tel:+79144064313">+79144064313</a>; 
                     <br> <a href="tel:+79244011379">+79244011379</a>;
                     <br> natka.markova.1995@mail.ru;
                     <br> <a href="https://github.com/nataliani/summary.git" target="_blank" title="gitHub" id="gitHub">aккаунт на gitHub. </a>
                 </p>
-            </div>
         </div>
         <div class="lightBox" id="autentification">
-            <form  id="enter" class="box">
+            <form  id="enter">
                 <a href="#" class="close"></a>
                 <h1>Вход в систему</h1>
                 <input placeholder="Логин" id="login" type="text" required="">
@@ -42,17 +38,6 @@
                 <a id="out" class="button">Войти</a>
             </form>
         </div>
-		<div id="slider">
-                <div id="slidewrapper">
-                    <img src="/image/slider/page1.png" alt="Приветствую вас на своём ресурсе" class="slide">
-                    <img src="/image/slider/page2.png" alt="Здесь вы можете познакомится с моими творческими начинаниями" class="slide">
-                    <img src="/image/slider/page3.png" alt="И ознакомится с дебрями моего погружения в основы WEB-программирования" class="slide">
-                </div>
-                <div id="navBth">
-                    <input type="radio" name="navigation" class="navigation" id="1">
-                    <input type="radio" name="navigation" class="navigation" id="2">
-                    <input type="radio" name="navigation" class="navigation" id="3"> 
-                </div>
-        </div>
+		
 	</div>
     <div id="conteiner">

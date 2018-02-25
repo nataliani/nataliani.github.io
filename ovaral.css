@@ -19,7 +19,7 @@ body{
     font-size:20px;
     line-height:1.5;
 }
-#conteiner{
+#conteiner {
     padding: 0 1em 1em 2em;
 }
 p{
@@ -169,6 +169,8 @@ input[type="radio"]{
     display:inline-block;
     padding:5px;
     color:#003366;
+    width: 3.1em;
+    text-align: center;
 }
 #menuTop #vk,
 #menuTop #contacts{
@@ -254,29 +256,13 @@ a:hover
 .lightBox .box h1{
     text-align: center;
 }
-.close{
-    position:absolute;
-        top:15px;
-        right:15px;
-    display:block;
-    text-decoration:none;
-    color:black;
-    padding:0;
-    margin:0;
-    width:1em;
-    height:1em;
-    background-image:url(/image/close.png);
-    background-size: cover;
-    -moz-background-size: cover;  /* Firefox 3.6 */
-    background-position: center;
-}
 .imgBox{
     display:flex;
     flex-wrap:nowrap;
-    justify-content:space-around;
-    margin:10px 0 20px -1em;
-    width: calc(100% + 1em);
-    height:200px;
+    justify-content:space-between;
+    margin:0em 0em 0em -1.7em;
+    width: calc(100% + 2em);
+    height:205px;
     overflow-y: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius:5px;
@@ -286,7 +272,8 @@ a:hover
    margin:5px;
 }
 .lightBoxForImgBox .box{
-  width:95%;
+  width:50%;
+  margin-bottom: 5em;
 }
 .lightBoxForImgBox img{
   width:99%;

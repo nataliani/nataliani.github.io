@@ -3,7 +3,18 @@
 <script src='./js/addSummary.js'></script>
 <link rel="stylesheet" type="text/css" href='/index.css'>
 
-
+<div id="slider">
+                <div id="slidewrapper">
+                    <img src="/image/slider/page1.png" alt="Приветствую вас на своём ресурсе" class="slide">
+                    <img src="/image/slider/page2.png" alt="Здесь вы можете познакомится с моими творческими начинаниями" class="slide">
+                    <img src="/image/slider/page3.png" alt="И ознакомится с дебрями моего погружения в основы WEB-программирования" class="slide">
+                </div>
+                <div id="navBth">
+                    <input type="radio" name="navigation" class="navigation" id="1">
+                    <input type="radio" name="navigation" class="navigation" id="2">
+                    <input type="radio" name="navigation" class="navigation" id="3"> 
+                </div>
+        </div>
     <div id="advantages" class="menu" >
         <a href="#interested"> <div class='advantagesImg'><img src="image/advantages/interest.png" alt="Интерес"></div>      <div class="advantagesText">Заинтересованность</div></a>
         <a href="#perfectionism"> <div class='advantagesImg'><img src="image/advantages/perfectionism.png" alt="Красота"></div> <div class="advantagesText">Перфекционизм</div></a>
@@ -12,43 +23,32 @@
     </div>
     <div id="boxAdvantages">
         <div  id="interested" class="lightBox">
-            <div class="box"> 
-                <a href="#" class="close"></a>
                 <h1> Заинтере&shyсованность в работе!</h1>
                 <p>На мой взгляд, моим большим преимуществом является заинтересованность в деле. Моя молодость позволяет мне энергично интересоваться делом, за которое я взялась, я еще не устала от жизни и стремлюсь получить от неё максимум. Мне интересно решать новые задачи, находить к ним решение, познавать что-то новое, неизведанное, то, что так манит. Я готова с огромным желанием развиваться как профессионал и как личность, а это значит только одно, что вместе с моим личным развитием будет и развиваться организация. Да, не спорю, до определённого уровня необходимо дорасти, чтобы стать полезной для вашей компании. Но я уверенна, с моей заинтересованность это произойдёт достаточно быстро!
                 </p>
-            </div>
         </div>
-        <div href="#" id="perfectionism" class="lightBox">
-            <div class="box"> 
-                <a href="#" class="close"></a>
+        <div id="perfectionism" class="lightBox">
                 <h1>Перфекционизм!</h1>
                 <p>Обладаю неутолимым желанием сделать всё хорошо, и даже идеально. Очень коробят недочёты в работе и в рациональности использования свободного пространства. На мой взгляд, всё разрабатываемое должно работать для людей, а не против них. Программное обеспечение обязано облегчить жизнь пользователя, а не заставить его почувствовать себя глупо. Очень огорчает видеть подобные реализации. И как разработчик, я стремлюсь к адаптивным, логичным интерфейсам. Это касается не только внешней составляющей, хочется творить и в результате получать правильные и красивые решения. 
                 </p>
-            </div>
         </div>
-        <div href="#" id="ambitiousness" class="lightBox">
-            <div class="box"> 
-                <a href="#" class="close"></a>
+        <div id="ambitiousness" class="lightBox">
                 <h1>Амбициозность</h1>
                 <p>Данное качество я тоже отнесу к моим преимуществам. Ведь, как прекрасно иметь в команде целеустремленных, амбициозных людей. Людей, которые не остановятся на достигнутом и будут стремиться к усовершенствованию, как своих профессиональных навыков, так и социального положения. А ведь именно сотрудники компании выполняют конечную работу: предоставляют продукт, общаются с конечным пользователем и представляют вашу организацию на рынке и т.п. И кода коллектив стремится к личностному росту, это в первую очередь отражается на компании!
                 </p>
-            </div>
         </div>
         <div id="activity" class="lightBox">
-            <div class="box"> 
-                <a href="#" class="close"></a>
                 <h1>Активность!</h1>
                 <p>Стремление к жизни, жизнь в действии и жизнь в начинаниях. Это ведь и является смыслом нашего бытия. Я с удовольствием и с энтузиазмом берусь за незнакомые для меня задачи. То потрясающее чувство, когда одолевают мысли о возможных решениях, когда погружаешься всецело в общение с собой, со всевозможной литературой и компетентными людьми, в поисках решения и это стремление не угасает даже ночью. Когда в порыве творческого начала просыпаешься с чувством, что понятно как оно работает и пока мысль не покинула воспалённое сознание необходимо срочно попробовать, и после стольких мучений получен необходимый результат и переполняют чувства радости гордости и ощущение успеха. И эти чувства, это именно то, ради чего стоит работать!
                 </p>
-            </div>
         </div>
     </div>
     <div id="latter">
         <h1> Здравствуйте! </h1>
     
         <p>
-            <a href="#imgFace"><img src="/image/face.jpg" alt="Личная фотография"  id="face" align="right" vspac="20" hspace="20"></a>
+            <a href="#imgFace"><img src="/image/face.jpg" alt="Личная фотография"  
+                id="face" align="right" vspac="20" hspace="20"></a>
            Возможно, вас заинтересует моя кандидатура в качестве сотрудника вашей компании. Во время обучения в университете, я принимала участие в разработке модуля "Мониторинг деятельности подразделений ВУЗа". Занималась написанием технической документации и общением с конечным пользователем продукта, по вопросам улучшения интерфейса программного обеспечения. Успешно провела переговоры во время утверждения документации и сдачи в эксплуатацию разработанного программного продукта.
        </p>
        <p>
@@ -97,42 +97,23 @@
         </div>
         <div class="lightBoxForImgBox" >
             <div class="lightBox" id="magistracy"> 
-                <div class="box"> 
-                    <a href="#imgBoxForEducation" class="close"></a>
-                    <h1>Зачётная книжка</h1>
-                    <hr>
                     <img src="/image/education/magistracy.jpg" alt="Зачётная книжка магистратура">
-                </div>
             </div>
             <div class="lightBox" id="bachelorPage1"> 
-                <div class="box"> 
-                    <a href="#imgBoxForEducation" class="close"></a>
                     <img src="/image/education/bachelorPage1.jpg" alt="Диплом бакалавра лист 1">
-                </div>
             </div>
-             <div class="lightBox" id="bachelorPage2"> 
-                <div class="box"> 
-                    <a href="#imgBoxForEducation" class="close"></a>
+            <div class="lightBox" id="bachelorPage2"> 
                     <img src="/image/education/bachelorPage2.jpg" alt="Диплом бакалавра лист 2">
-                </div>
             </div>
              <div class="lightBox" id="bachelorPage3"> 
-                <div class="box"> 
-                    <a href="#imgBoxForEducation" class="close"></a>
-                    <img src="/image/education/bachelorPage3.jpg" alt="Диплом бакалавра лист 3">
-                </div>
+                     <img src="/image/education/bachelorPage3.jpg" alt="Диплом бакалавра лист 3">
             </div>
              <div class="lightBox" id="bachelorPage4"> 
-                <div class="box"> 
-                    <a href="#imgBoxForEducation" class="close"></a>
-                    <img src="/image/education/bachelorPage4.jpg" alt="Диплом бакалавра лист 4">
-                </div>
+                     <img src="/image/education/bachelorPage4.jpg" alt="Диплом бакалавра лист 4">
             </div>
         </div>
        <!-- <a href="#addEducation" class="button">Добавить образование</a>-->
         <div class="lightBox" id="addEducation">
-            <form class="box">
-                <a href="#listEducation" class="close"></a>
                 <label>
                     Сроки обучения
                     <input type="date" id="dateStartEducation" >
@@ -141,7 +122,6 @@
                 <input type="text" id="nameEducationInstitution" placeholder="Учебное заведение" size="100">
                 <input type="text" id="nameSpeciality" placeholder="Специальность" size="60">
                 <input type="button" id="addEducation" value="Добавить">
-            </form>
         </div>
     </div>
     <div id="work" class="anchor">

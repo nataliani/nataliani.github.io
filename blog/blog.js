@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	/*подгрузка контената*/
 	$(".blog").click(function(){
 		var id=$(this).attr('id');
 		var info =$(this).attr("href")+" #"+id;
@@ -7,14 +8,6 @@ $(document).ready(function(){
 		$("#loader").fadeIn("normal");
 		return false;
 	});
-	/*$(".backBottom").click(function(){
-		var info =$(this).attr("href")+" #blog";
-		$("#blog").hide("fast", loadContent(info));
-		$(".backBottom").css('display', 'none' );
-		$("#loader").fadeIn("normal");
-		return false;
-	})*/
-
 
 		function loadContent(info){
 			$("#blog").load(info, "", function(){
