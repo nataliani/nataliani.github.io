@@ -1,13 +1,12 @@
 jQuery("document").ready(function($){
     
     var heightHeader=$('#header').outerHeight();
-    var heightLatter=$('#latter').outerHeight();
-    var heightMenu=$('#mainMenu').outerHeight();
-    var heightAdvantages=$('#advantages').outerHeight();
-   
-     
+    var heightLatter=$('#prev_menu').outerHeight();
+ 
+    console.log(heightHeader+heightLatter);
+         
     $(window).scroll(function () {
-        if ((heightHeader+heightLatter+heightMenu+heightAdvantages)<$(this).scrollTop()) {
+        if ((heightHeader+heightLatter)<$(this).scrollTop()) {
             $('#mainMenu').css({
                 'position':'fixed',
                     'top':'0',
