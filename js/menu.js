@@ -2,9 +2,7 @@ jQuery("document").ready(function($){
     
     var heightHeader=$('#header').outerHeight();
     var heightLatter=$('#prev_menu').outerHeight();
- 
-    console.log(heightHeader+heightLatter);
-         
+        
     $(window).scroll(function () {
         if ((heightHeader+heightLatter)<$(this).scrollTop()) {
             $('#mainMenu').css({

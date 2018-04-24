@@ -15,6 +15,8 @@ jQuery("document").ready(function($){
 	/*работа с лайтбоксами*/
 	$(".lightBox").wrapInner("<div class='box'></div>");
 	$(".lightBox").click(function() {
+		if ($(this).attr('id') != "autentification"){
 	    document.location.href = '#'+$(this).parents().attr('id')+1; 
+	}
   	});
 });

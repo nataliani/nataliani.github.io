@@ -52,13 +52,7 @@ tr:nth-child(2n-1){
     color:#003366;
 }
 /* вход в систему*/
-#enter {
-  box-sizing: border-box;
-  width: 260px;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-  padding-bottom: 1.5em;
-  border-radius: 3px;
-}
+
 input,
 textarea {
   margin: 1em 0px;
@@ -289,4 +283,19 @@ a:hover
   padding: 0;
 
 }
-
+.close{
+    position:absolute;
+        top:15px;
+        right:15px;
+    display:block;
+    text-decoration:none;
+    color:black;
+    padding:0;
+    margin:0;
+    width:1em;
+    height:1em;
+    background-image:url(/image/close.png);
+    background-size: cover;
+    -moz-background-size: cover;  /* Firefox 3.6 */
+    background-position: center;
+}
