@@ -299,3 +299,10 @@ a:hover
     -moz-background-size: cover;  /* Firefox 3.6 */
     background-position: center;
 }
+
+#autentification .box 
+{
+    width: 30%;
+    min-width:200px;
+    max-width:700px;
+} 
