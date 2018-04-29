@@ -105,9 +105,9 @@ input[type="submit"]{
 
 /*слайдер*/
 #slider {
-    width: 100%;
+    margin-left:-2em;
+    width: calc(100% + 3em);
     max-width:1200px;
-    margin: 0 auto;
     display: table;
     position: relative;
     overflow: hidden;
@@ -183,22 +183,26 @@ input[type="radio"]{
 .menu{
     display:table;
     box-sizing:inherit;
-    height: 3em;
     background: #33CC99;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-left:-2em;
     width: calc(100% + 3em);
+    line-height: 1.3em;
+
 }
+
 .menu a{
     box-sizing:inherit;
     display:table-cell;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
-    width: calc(100%/5);
+    width: calc(100% / 5);
     height: 100%;
     vertical-align:middle;
     text-align:center;
+    padding-top : 0.5em;
+    padding-bottom: 0.5em;
 }
 button:hover,
 a:hover
