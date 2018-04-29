@@ -4,7 +4,7 @@ html{
     -moz-box-sizing: border-box;
     background: #66A3D2; /* Для старых браузров */
     background: linear-gradient(to top, #006666, #d4ffff);
-    font-size:small;
+    font-size:14px;
     padding:0px;
 }
 body{
@@ -201,8 +201,10 @@ input[type="radio"]{
     height: 100%;
     vertical-align:middle;
     text-align:center;
-    padding-top : 0.5em;
-    padding-bottom: 0.5em;
+  }
+  #mainMenu a{
+    padding-top : 0.2em;
+    padding-bottom: 0.2em;
 }
 button:hover,
 a:hover
