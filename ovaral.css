@@ -7,6 +7,7 @@ html{
     font-size:14px;
     padding:0px;
 }
+
 body{
     box-sizing:inherit;
     padding:0;
@@ -19,40 +20,48 @@ body{
     font-size:20px;
     line-height:1.5;
 }
+
 #conteiner {
     padding: 0 1em 1em 2em;
 }
+
 p{
     text-indent:3em;
     text-align: justify;
 }
+
 a{
     text-decoration:none;
     color: black;
 }
+
 h1{
     color:#003366;
 }
+
 hr{
     background:#1abc9c !important;
-
 }
+
 table{
   width: 100%;
   border: 2px solid #1abc9c;
 }
+
 th{
   background: rgba(109, 114, 115, 0.4);
 }
+
 tr:nth-child(2n-1){
   background: rgba(109, 114, 115, 0.1);
 }
+
 /*шапка*/
 #header{
     color:#003366;
 }
-/* вход в систему*/
 
+/* вход в систему*/
 input,
 textarea {
   margin: 1em 0px;
@@ -70,12 +79,14 @@ textarea {
   background-repeat: no-repeat;
   color: #0e6252;
 }
+
 input:focus, input:valid,
 textarea:focus, textarea:valid {
   box-shadow: none;
   outline: none;
   background-position: 0 0;
 }
+
 input:focus::-webkit-input-placeholder, 
 input:valid::-webkit-input-placeholder,
 textarea:focus::-webkit-textarea-placeholder, 
@@ -86,6 +97,7 @@ textarea:valid::-webkit-textarea-placeholder {
           transform: translateY(-20px);
   visibility: visible !important;
 }
+
 button,
 .button,
 input[type="submit"]{
@@ -117,6 +129,7 @@ input[type="submit"]{
     -o-user-select: none;
     user-select: none;
 }
+
 #slidewrapper {
     position: relative;
     width: calc(100% * 3);
@@ -131,12 +144,14 @@ input[type="submit"]{
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
 }
+
 #slidewrapper .slide {
     width: calc(100%/3);
     list-style: none;
     display: inline;
     float: left;
 }
+
 #navBth{
     position:absolute;
         bottom:5px;
@@ -145,13 +160,16 @@ input[type="submit"]{
     margin: 0;
     text-align: center;
 }
+
 input[type="radio"]{
     display:inline;
     width:2em;
 }
+
 .navigation:hover{
     cursor:pointer;
 }
+
 /*верхнее меню*/
 #menuTop{
     padding: 0 5px;
@@ -159,6 +177,7 @@ input[type="radio"]{
     text-align:right;
     line-height:2;
 }
+
 #menuTop a{
     display:inline-block;
     padding:5px;
@@ -166,6 +185,7 @@ input[type="radio"]{
     width: 3.1em;
     text-align: center;
 }
+
 #menuTop #vk,
 #menuTop #contacts{
     padding:0 0 0 0.2em;
@@ -179,6 +199,7 @@ input[type="radio"]{
 #menuTop #contacts{
     background: url(/image/contacts.svg) 50% 50%  no-repeat;
 }
+
 /*навигация*/
 .menu{
     display:table;
@@ -188,7 +209,6 @@ input[type="radio"]{
     margin-left:-2em;
     width: calc(100% + 3em);
     line-height: 1.3em;
-
 }
 
 .menu a{
@@ -202,12 +222,15 @@ input[type="radio"]{
     vertical-align:middle;
     text-align:center;
   }
-  #mainMenu a{
+
+#mainMenu a{
     padding-top : 0.2em;
     padding-bottom: 0.2em;
 }
+
 button:hover,
-a:hover
+a:hover,
+.blog:hover
 {
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);

@@ -1,10 +1,11 @@
+/*
 .flex{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	margin: 2em 0em;
 	flex-wrap: wrap;
-}
+}*/
 #loader {
 	background: url(../image/blog/ajax-loader.gif) no-repeat;
 	background-size: cover;
@@ -25,6 +26,20 @@
 	display:none;
 	
 }
-div#blog > div{
-	margin-top: -50px;
+
+.blog{
+	margin: 5px;
+	height:10em;
+	border-left: 40px solid #33CC99;
+	background: white;
+}
+.blog img{
+	height:100%;
+}
+.nameArticle{
+	position: absolute;
+	color: white;
+	transform-origin: 0 0;
+	transform: rotate(90deg);
+
 }
