@@ -1,27 +1,32 @@
 <?php include './../header.php' ?>
-<?php include './../admin/stat.php' ?>
+ <?php // include './../admin/stat.php' ?>
 
 <div id="loader"></div>
 <a href="./blog.php" class="backBottom" ></a>
 <div id="blog">
 
-    <article href="./articles.php" class="blog" id="myself" title="О себе">
+    <article href="./articles.php" class="article shadow-box" id="myself" title="О себе">
+        
         <h2 class="nameArticle">О себе</h2>
         <img src="/image/blog/personal.png" alt="О себе">
     </article>
-    <article href="./articles.php" class="blog" id="bash" title="Комманды bash" >
+
+
+
+    <article href="./articles.php" class="article" id="bash" title="Комманды bash" >
+       
         <h2 class="nameArticle">Bash</h2>
         <img src="/image/blog/bash.png" alt="bash">
     </article>
-    <article href="./articles.php" class="blog" id="jQuary" title="Функции библиотеки jQuary">
+    <article href="./articles.php" class="article" id="jQuary" title="Функции библиотеки jQuary">
         <h2 class="nameArticle">jQuery</h2>
         <img src="/image/blog/jQuery.png" alt="jQuary">
     </article>
-    <article href="./articles.php" class="blog" id="git" title="Комманды git">
+    <article href="./articles.php" class="article" id="git" title="Комманды git">
         <h2 class="nameArticle">Git</h2>
         <img src="/image/blog/git.png" alt="git">
     </article>
-    <article href="./articles.php" class="blog" id="english" title="Грамматика английского ">
+    <article href="./articles.php" class="article" id="english" title="Грамматика английского ">
         <h2 class="nameArticle">Английский</h2>
         <img src="/image/blog/english.jpg" alt="Английский">
     </article>

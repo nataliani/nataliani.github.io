@@ -230,7 +230,7 @@ input[type="radio"]{
 
 button:hover,
 a:hover,
-.blog:hover
+.article:hover
 {
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
@@ -313,20 +313,20 @@ a:hover,
 
 }
 .close{
-    position:absolute;
-        top:15px;
-        right:15px;
-    display:block;
-    text-decoration:none;
-    color:black;
-    padding:0;
-    margin:0;
-    width:1em;
-    height:1em;
-    background-image:url(/image/close.png);
-    background-size: cover;
-    -moz-background-size: cover;  /* Firefox 3.6 */
-    background-position: center;
+  position:absolute;
+      top:15px;
+      right:15px;
+  display:block;
+  text-decoration:none;
+  color:black;
+  padding:0;
+  margin:0;
+  width:1em;
+  height:1em;
+  background-image:url(/image/close.png);
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;
 }
 
 #autentification .box 

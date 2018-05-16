@@ -17,6 +17,7 @@
        left:50%;
     display:none;
 }
+
 .backBottom {
 	background: url(../image/blog/backbutton.svg) no-repeat;
 	background-size: cover;
@@ -27,13 +28,18 @@
 	
 }
 
-.blog{
+.article{
+	position:relative;
 	margin: 5px;
+	margin-top: 50px;
 	height:10em;
 	border-left: 40px solid #33CC99;
 	background: white;
+	box-shadow: 0 0 3px #cccccc;
+	z-index: 3;
+
 }
-.blog img{
+.article img{
 	height:100%;
 }
 .nameArticle{
@@ -41,5 +47,77 @@
 	color: white;
 	transform-origin: 0 0;
 	transform: rotate(90deg);
+}
 
+.article::after {
+    content: "";
+    position: absolute;
+    bottom: 94%;
+    height:5%;
+    width: 52%;
+    background: #dddddd;
+    box-shadow: 0 15px 10px #555555;
+    right: 2px;
+    transform: rotate(-2deg);
+    z-index: 2;
+}
+.article::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    bottom: 15px;
+    width: 52%;
+    background: #dddddd;
+    box-shadow: 0 15px 10px #555555;
+    right: 5px;
+    transform: rotate(3deg);
+    z-index: 1;
+}
+
+
+/*Отрисовка скрепочки)*/
+.paperClipIcon,
+.paperClipIcon::after,
+.paperClipIcon::before {
+  border-color: #33CC99 !important;
+}
+.paperClipIcon {
+  width: 13px;
+  height: 15px;
+  border-bottom: none;
+  border-left: 3px solid;
+  border-right: 3px solid;
+  border-top: none;
+  position: absolute;
+  	left: 90%;
+  	top: -15px;
+  z-index: 5;
+}
+.paperClipIcon::before {
+  position: absolute;
+  content: "";
+  top: -19px;
+  right: -7px;
+  width: 13px;
+  height: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: none;
+  border-left: 3px solid;
+  border-right: 3px solid;
+  border-top: 3px solid;
+}
+.paperClipIcon::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  right: -3px;
+  width: 9px;
+  height: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: none;
+  border-left: 3px solid;
+  border-right: 3px solid;
+  border-bottom: 3px solid;
 }

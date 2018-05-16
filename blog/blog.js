@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	$('.article').prepend('<div class="paperClipIcon"></div>'); 
 	/*подгрузка контената*/
 	$(".blog").click(function(){
 		var id=$(this).attr('id');

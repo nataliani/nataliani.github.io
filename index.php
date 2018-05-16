@@ -1,5 +1,5 @@
 <?php include './header.php' ?>
-<?php include './admin/stat.php' ?>
+ <?php// include  './admin/stat.php' ?>
 <script src='./js/addSummary.js'></script>
 <link rel="stylesheet" type="text/css" href='/index.css'>
 <div id="prev_menu">
